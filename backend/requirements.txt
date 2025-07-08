@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+gpiozero
+RPi.GPIO
+adafruit-blinka
+adafruit-circuitpython-ssd1306
+Pillow

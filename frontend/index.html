@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Control OLED y LEDs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Control OLED y LEDs</h1>
+
+    <div class="buttons">
+      <button id="led-red" class="led red off" onclick="toggleLED('red')">🔴 Rojo OFF</button>
+      <button id="led-yellow" class="led yellow off" onclick="toggleLED('yellow')">🟡 Amarillo OFF</button>
+      <button id="led-green" class="led green off" onclick="toggleLED('green')">🟢 Verde OFF</button>
+      <button id="led-blue" class="led blue off" onclick="toggleLED('blue')">🟦 Azul OFF</button>
+      <button id="led-white" class="led white off" onclick="toggleLED('white')">⚫ Negro OFF</button>
+    </div>
+
+    <hr />
+
+    <div class="oled-text">
+      <h2>Enviar Texto al OLED</h2>
+      <textarea id="oledMessage" rows="4" placeholder="Escribe un mensaje..."></textarea>
+      <button class="oled-btn" onclick="sendText()">📤 Mostrar Texto</button>
+    </div>
+
+    <hr />
+
+    <div class="oled-image">
+      <h2>Subir Imagen al OLED</h2>
+      <input type="file" id="imageFile" accept="image/*" />
+      <button class="oled-btn" onclick="chooseAndSendImage()">📁 Elegir Imagen</button>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

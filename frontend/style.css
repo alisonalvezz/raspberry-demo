@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 1.5rem 0;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    color: white;
+  }
+  
+  button.off:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  button.led.red.off {
+    background: #aa2e2e;
+  }
+  
+  button.led.red.on {
+    background: #ff4b4b;
+  }
+  
+  button.led.yellow.off {
+    background: #b38f00;
+    color: #333;
+  }
+  
+  button.led.yellow.on {
+    background: #ffc107;
+    color: black;
+  }
+  
+  button.led.green.off {
+    background: #2f6e2f;
+  }
+  
+  button.led.green.on {
+    background: #4caf50;
+  }
+  
+  button.led.blue.off {
+    background: #1a3c66;
+  }
+  
+  button.led.blue.on {
+    background: #2196f3;
+  }
+  
+  button.led.white.off {
+    background: #000000;
+  }
+  
+  button.led.white.on {
+    background: #666666;
+  }
+  
+  .oled-btn {
+    background: #2196f3;
+    color: white;
+    margin-top: 0.5rem;
+  }
